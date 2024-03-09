@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMS Classifier</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">SMS Classifier</h1>
+      <form method="POST">
+        <input type="text" class="input" id="user_input" name="user_input" />
+        <br />
+        <button class="btn" type="submit">Classify</button>
+      </form>
+      <p id="output">{{ output }}</p>
+    </div>
+  </body>
+</html>
